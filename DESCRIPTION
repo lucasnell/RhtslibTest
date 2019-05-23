@@ -1,0 +1,18 @@
+Package: RhtslibTest
+Type: Package
+Title: Testing link to Rhtslib
+Version: 1.0
+Date: 2019-05-22
+Author: Lucas Nell
+Maintainer: Lucas Nell <lucas@lucasnell.com>
+Description: Testing link to Rhtslib.
+License: GPL (>= 2)
+Encoding: UTF-8
+biocViews:
+Imports:
+    Rcpp (>= 1.0.1),
+    Rhtslib
+LinkingTo:
+    Rcpp,
+    Rhtslib
+RoxygenNote: 6.1.1
