@@ -1,11 +1,5 @@
 
-# Access to pgc RNG and htslib headers:
-RHTSLIB_CPPFLAGS=`echo 'Rhtslib::pkgconfig("PKG_CPPFLAGS")'|\
+RHTSLIB_LIBS=`echo 'Rhtslib::pkgconfig("PKG_LIBS")'|\
     "${R_HOME}/bin/R" --vanilla --slave`
-PKG_CPPFLAGS = -I../inst/include/ $(RHTSLIB_CPPFLAGS)
-
-# For htslib:
-RHTSLIB_LIBS=`echo 'Rhtslib::pkgconfig("PKG_LIBS")'| "${R_HOME}/bin/R" --vanilla --slave`
-
-PKG_LIBS = $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS) $(RHTSLIB_LIBS)
+PKG_LIBS=$(RHTSLIB_LIBS)
 

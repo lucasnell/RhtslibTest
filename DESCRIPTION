@@ -14,5 +14,6 @@ Imports:
     Rhtslib
 LinkingTo:
     Rcpp,
-    Rhtslib
+    Rhtslib,
+    zlibbioc
 RoxygenNote: 6.1.1

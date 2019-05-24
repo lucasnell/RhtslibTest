@@ -5,7 +5,6 @@
 #'
 #'
 #' @importFrom Rcpp evalCpp
-#' @import Rhtslib
 #' @useDynLib RhtslibTest, .registration = TRUE
 #'
 #' @docType package
