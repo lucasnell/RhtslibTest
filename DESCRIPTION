@@ -10,10 +10,10 @@ License: GPL (>= 2)
 Encoding: UTF-8
 biocViews:
 Imports:
-    Rcpp (>= 1.0.1),
-    Rhtslib
+    Rcpp (>= 1.0.1)
 LinkingTo:
     Rcpp,
     Rhtslib,
     zlibbioc
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
+SystemRequirements: GNU make
